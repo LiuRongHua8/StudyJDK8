@@ -1,5 +1,6 @@
 package com.iotknowyou.rt.java.lang;
 
+import java.io.ObjectStreamField;
 import java.util.Arrays;
 
 
@@ -23,29 +24,68 @@ public final class MyString implements java.io.Serializable, Comparable<String>,
     *   CharSequence ：是一个接口，表示一个char值的可读序列，此接口为多种char序列提供统一的、只读的通道。
     * */
 
-    /** The value is used for character storage. */
+    /**
+     * 该值用于字符存储。
+     * */
     private final char value[];
 
-    /** Cache the hash code for the string */
+    /**
+     * 缓存字符串的哈希码
+     * */
     private int hash; // Default to 0
 
-    /** use serialVersionUID from JDK 1.0.2 for interoperability */
-    private static final long serialVersionUID = -6849794470754662019L;
+    /**
+     * 使用JDK 1.0.2中的serialVersionUID进行互操作
+     * */
+    private static final long serialVersionUID = -6849794470754667710L;
+
+
+    /**
+     * 类字符串在序列化流协议中是特殊情况。
+     * 根据对象序列化规范第6.2节“流元素”，将String实例写入ObjectOutputStream中。
+     * */
+    private static final ObjectStreamField[] serialPersistentFields = new ObjectStreamField[0];
+
+
+    /*========================================== 分割行 ===============================================*/
+
 
     /*构造方法*/
+    /*
+    * 初始化一个新创建的String对象，使其表示空字符序列。
+    * 请注意，使用此构造函数是不需要，因为字符串是不可变的。
+    * */
     public MyString(){
         this.value = "".toCharArray();
     }
 
+    /*
+    * 初始化一个新创建的String对象，使其表示与参数相同的字符序列；
+    * 换句话说，新创建的字符串是参数字符串的副本。
+    * 除非需要原始的显式副本，使用此构造函数是不需要，
+    * 因为字符串是不可变的。
+    * */
     public MyString(MyString original) {
         this.value = original.value;
         this.hash = original.hash;
     }
 
+    /*
+    *  分配新字符串，将参数字符序列复制到新的字符串
+    *  将复制字符数组的内容，随后对字符数组的修改不会影响新创建的字符串。
+    * */
     public MyString(char value[]) {
         this.value = Arrays.copyOf(value, value.length);
     }
 
+    /*
+    * 分配一个包含子数组中字符的新String
+    *  字符数组参数：
+    *    offset参数是子数组第一个字符的索引
+    *    count参数指定子数组的长度
+    * 从offset开始计数，往后count个字符的内容将会被复制到新String中
+    * 字符数组的后续修改不会影响新创建的字符串。
+    * */
     public MyString(char value[], int offset, int count) {
         if (offset < 0) {
             throw new StringIndexOutOfBoundsException(offset);
@@ -66,6 +106,12 @@ public final class MyString implements java.io.Serializable, Comparable<String>,
         this.value = Arrays.copyOfRange(value, offset, offset+count);
     }
 
+    /*
+    * 分配一个新字符串，其中包含来自Unicode代码点数组参数的子数组。
+    * offset参数是子数组的第一个代码点的索引
+    * count参数指定子数组的长度。
+    * 子数组的内容转换为char对int数组的后续修改不会影响新创建的字符串。
+    * */
     public MyString(int[] codePoints, int offset, int count) {
         if (offset < 0) {
             throw new StringIndexOutOfBoundsException(offset);
@@ -112,6 +158,18 @@ public final class MyString implements java.io.Serializable, Comparable<String>,
     }
 
 
+    /* Common private utility method used to bounds check the byte array
+     * and requested offset & length values used by the String(byte[],..)
+     * constructors.
+     */
+    private static void checkBounds(byte[] bytes, int offset, int length) {
+        if (length < 0)
+            throw new StringIndexOutOfBoundsException(length);
+        if (offset < 0)
+            throw new StringIndexOutOfBoundsException(offset);
+        if (offset > bytes.length - length)
+            throw new StringIndexOutOfBoundsException(offset + length);
+    }
 
     @Override
     public int length() {
