@@ -2,16 +2,13 @@ package com.iotknowyou.rt.java.lang;
 
 import java.util.Arrays;
 
-import static com.iotknowyou.GlobalConstant.MyStringConstant.MIN_HIGH_SURROGATE;
-import static com.iotknowyou.GlobalConstant.MyStringConstant.MIN_LOW_SURROGATE;
-import static com.iotknowyou.GlobalConstant.MyStringConstant.MIN_SUPPLEMENTARY_CODE_POINT;
 
 /**
  * @title: String
  * @projectName StudyJDK8
- * @description: 学习JDK8中 java.lang.String 类的源码和设计思想
  * @author: RongHua Liu
  * @date: 2019/11/12  10:07
+ * @description: 学习JDK8中 java.lang.String 类的源码和设计思想
  */
 public final class MyString implements java.io.Serializable, Comparable<String>, CharSequence {
     /*
@@ -93,9 +90,9 @@ public final class MyString implements java.io.Serializable, Comparable<String>,
         int n = count;
         for (int i = offset; i < end; i++) {
             int c = codePoints[i];
-            if (Character.isBmpCodePoint(c))
+            if (MyCharacter.isBmpCodePoint(c))
                 continue;
-            else if (Character.isValidCodePoint(c))
+            else if (MyCharacter.isValidCodePoint(c))
                 n++;
             else throw new IllegalArgumentException(Integer.toString(c));
         }
@@ -105,23 +102,15 @@ public final class MyString implements java.io.Serializable, Comparable<String>,
 
         for (int i = offset, j = 0; i < end; i++, j++) {
             int c = codePoints[i];
-            if (Character.isBmpCodePoint(c))
+            if (MyCharacter.isBmpCodePoint(c))
                 v[j] = (char)c;
             else
-                toSurrogates(c, v, j++);
-               // Character.toSurrogates(c, v, j++);
+                MyCharacter.toSurrogates(c, v, j++);
         }
 
         this.value = v;
     }
 
-
-    private final void toSurrogates(int codePoint, char[] dst, int index){
-        // We write elements "backwards" to guarantee all-or-nothing
-        dst[index+1] = (char) ((codePoint & 0x3ff) + MIN_LOW_SURROGATE);
-        dst[index] = (char) ((codePoint >>> 10)
-                + (MIN_HIGH_SURROGATE - (MIN_SUPPLEMENTARY_CODE_POINT >>> 10)));
-    }
 
 
     @Override
