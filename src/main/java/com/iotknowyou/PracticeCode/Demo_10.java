@@ -441,6 +441,196 @@ public class Demo_10 {
 
 
          );
+
+         putWorlds("worlds3221_3240", "" +
+                 "flow  v 流 流动  飘 n 流动  " +
+                 "flower  n 花 花卉  v 开花 繁荣" +
+                 "spear  n 毛  v 刺" +
+                 "vase  n 花瓶" +
+                 "massage  n 消息  v 发短信" +
+                 "wait v 等待 等候 n 等待 期待" +
+                 "" +
+                 "faint adj 微弱了  n 晕倒  " +
+                 "being  n 生物 存在  " +
+                 "interpreter  n 口译人 " +
+                 "fix  v 使固定  确定时间 n一次用量" +
+                 "frighten  v 使害怕 使受惊" +
+                 "diagram  n 图解 图标 视图 " +
+                 "hasty adj 创促的 鲁莽的" +
+                 "highly adv 高度地 地位高地" +
+                 "high adj 高的  权位重要的" +
+                 "leap v 跳 跳跃 快速提供帮助  快速提高  n 聚变  快速提高" +
+                 "blame  v 责备" +
+                 "participate  参加"
+         );
+         putWorlds("worlds3201_3220", "" +
+                 "destroy  v 毁坏 宰杀 销毁 " +
+                 "station  n 站 车站 站台 局  v 驻扎 " +
+                 "jet  n 喷气式飞机  v 乘飞机旅行" +
+                 "pulse n 脉搏  v 有规律的跳动" +
+                 "productive  adj 富有成效的" +
+                 "since  adv 此后  从  自从" +
+                 "play v 玩 玩耍 捉弄 假装 装扮 演奏 播放" +
+                 "playground  n  操场 运动场 " +
+                 "entertainment  n 娱乐 " +
+                 "law  n 法律学 规律" +
+                 "lawyer n 律师 法学家 " +
+                 "pudding  n 布丁 甜点  " +
+                 "netall  n 金属制品" +
+                 "refuse  n 拒绝" +
+                 "thousand n 一千 " +
+                 "fame n 名声 名望 " +
+                 "empty adj 空的 无人的 空洞的 无意义的 " +
+                 ""
+         );
+         putWorlds("worlds3181_3200", "" +
+                 "sore  adj 痛的 疼痛的 " +
+                 "barrel  n 桶 枪管 " +
+                 "correction n 改正 修改 责罚 惩罚 " +
+                 "curtain n 窗帘 帷幕 幕布 " +
+                 "mail  n 邮件 信件  v 邮件 " +
+                 "contract  n  契约 合同  v 使缩小" +
+                 "measurable adj 可测量的 显著的" +
+                 "bullet  n 子弹 " +
+                 "knife n 小刀  v 用刀砍 刺" +
+                 "candidate n 申请人 求职者 " +
+                 "glow  v 发光 发热 " +
+                 "grammatical adj 语法的 符合语法的 " +
+                 "grammar n 语法 语法书" +
+                 "compel v 强迫 逼迫 引发 " +
+                 "jar  n 罐子  " +
+                 "wander v 漫步 闲逛 走神 " +
+                 "divorce n 离婚 分离 分割  v 与 离婚" +
+                 "youth n 青年时期 " +
+                 "television  n 电视 " +
+                 "revolt v 反抗  n 反抗 " +
+                 ""
+         );
+         putWorlds("worlds3161_3180", "" +
+                 "associate  v 将 ** 与 ** 联系起来  n 朋友 同事  adj 非正式的" +
+                 "association n 协会 团体 联合 联盟 " +
+                 "source n 来源 出处 发源地  v 从** 获取" +
+                 "evolution  n 演化 进化 发展 " +
+                 "hazard n 危险物  v 冒险建议 冒险猜测  使遭遇危险" +
+                 "arrange v 安排 准备 排练" +
+                 "crystal n 水晶 水晶饰品 " +
+                 "grocer n 店员 " +
+                 "badminton  n 羽毛球  羽毛球运动" +
+                 "acceleration  n 加速度 加快 帧数 " +
+                 "health n 健康 状况 " +
+                 "trend n 趋势 倾向 " +
+                 "fold  v 折叠 对折  n 折线 折痕" +
+                 "grace n 优美 通情达理 体面  v 使优美 为**增色" +
+                 "graceful  adj  优美的 优雅的 有风度的 " +
+                 "shout  v 大声说 大声呼喊  n 喊声 " +
+                 "support v 支持  赞成 拥护 n 支撑物 " +
+                 ""
+         );
+         putWorlds("worlds3141_3160", "" +
+                 "management  n 管理 经验 安排 管理层" +
+                 "manage  v 管理 掌管 " +
+                 "manager  n 经理 管理人 " +
+                 "elsewhere  adv  在别处 到别处 " +
+                 "Swiss  n 瑞士 瑞士人" +
+                 "Russian  adj  俄罗斯的 " +
+                 "sphere  n 球  范围 圈 界 " +
+                 "reluctant  adj  勉强的 不情愿的 " +
+                 "passive  adj 被动的 消极的  " +
+                 "seaman  n 海员 " +
+                 "mute  v 减轻噪音 " +
+                 "puppet n 木偶 玩偶 傀儡 " +
+                 "lock  n 锁  水闸  v 锁上 锁定 " +
+                 "static  adj 静止的 " +
+                 "restriction  n  受约束的  " +
+                 "restrict  v 约束 限制 妨碍 " +
+                 "delicious  adj  美味的  " +
+                 "fatigue  n 疲劳  v 使 极度疲劳" +
+                 "brood  n 一窝雏鸟  v 担忧 " +
+                 ""
+         );
+         putWorlds("worlds3121_3140", "" +
+                 "revenge  n 报仇 报复 " +
+                 "purpose  n 意图 意志 " +
+                 "tap      v 连续的轻拍 n 龙头 " +
+                 "explanation  n 解释 说明 " +
+                 "explain  v 解释 " +
+                 "dangerous  adj 危险的  不安全的 " +
+                 "ignorant  adj 不知情的 愚昧的的 无知的 " +
+                 "pair  n 一对 一双  v 与 配对" +
+                 "satisfaction  adj 满意的" +
+                 "unsatisfactory adj 不令人满意的" +
+                 "veteran  n 经验丰富的人 " +
+                 "bold  adj 勇敢的 无谓的 鲁莽的 大胆的 " +
+                 "excess  n  过度  adj 多余的 额为的" +
+                 "classical adj 古典的 传统的 典雅的 " +
+                 "article  n 文章 报道 " +
+                 "beauty  n 美丽 美人 好东西 好处 " +
+                 "beautiful  adj 美丽的 " +
+                 "grateful  adj  表示感谢的 感激的 " +
+                 "cruel  adj  残忍的  令人痛苦的" +
+                 "wicked  adj 恶劣的  顽皮的"
+         );
+
+         putWorlds("worlds3101_3120", "" +
+                 "alone  adj adv  单独的 孤独的 " +
+                 "arise v 发生 出现 " +
+                 "refuge  n 避难 避难所 " +
+                 "quarter  n 季度 " +
+                 "neat  adj 整洁的  有条理的 巧妙的      " +
+                 "sponsor  v 赞助 " +
+                 "worship  v 崇拜 信仰  n 对上帝的敬奉" +
+                 "drama  n 戏剧" +
+                 "pump  n  泵  v 使用泵抽 " +
+                 "unit  n  课程的单元 计量的单元 " +
+                 "never adv 从不 永不 绝不 " +
+                 "permit v 允许  n 许可证 " +
+                 "permission  n 允许 许可 准许 " +
+                 "badly  adv  严重的  差的  非常 嫉妒 " +
+                 "bad  adj 坏的  不好的  劣质的 邪恶的  " +
+                 "champion  n 冠军 优胜者  v 支持 捍卫  adj 优秀的 " +
+                 "porch  n 门廊 走廊 " +
+                 "rubber  n 橡皮  橡胶  橡胶制成的 "
+         );
+
+         putWorlds("worlds3081_3100", "" +
+                 "thick  adj  厚的 粗壮的 茂密的 " +
+                 "yesterday  n 昨天 " +
+                 "upside-down  n 上下翻滚  乱七八糟" +
+                 "let  v 让 任由 出租 " +
+                 "pollution  n 污染 污染物 " +
+                 "pollute v 弄脏 玷污 " +
+                 "unless  除非  除了在什么的情况下 " +
+                 "steel  n 钢铁 钢铁工业 " +
+                 "guide n 指导性的事物  指导  v 指导 指引" +
+                 "repeat v 重复 重说 重做 " +
+                 "repeatedly adv 重复的 多次的 " +
+                 "suspicion  n 怀疑 疑心" +
+                 "suspicious adj 可疑的 " +
+                 "suspect  v 猜测 怀疑 认为**可能 " +
+                 "convince  v 说服 使信服 " +
+                 "infect  感染 " +
+                 "resource  n 资源  v 为什么提供资源 " +
+                 "soon  adv 很快 马上 " +
+                 "potential  adj  潜在的  n 潜能 "
+
+         );
+
+         putWorlds("worlds3061_3080", "" +
+                 "complicated  adj  复杂的 " +
+                 "complication  n 复杂化 " +
+                 "bother  v 打扰 烦扰 " +
+                 "occur  v 事故的发生 " +
+                 "occurrence  n 发生的事  遭遇 " +
+                 "secondly  adv 第二点 其次 " +
+                 "cigarette  n 香烟 " +
+                 "axis  n 中线  " +
+                 "impact  n 冲击力 撞击力 " +
+                 "nowhere  adv  没门 任何都不" +
+                 "bloom  v 开花 绽放  n 花  花朵  风华正茂" +
+                 "shirt  n  男士衬衫" +
+                 "income  n 收入  " +
+                 "weapon "
+         );
      }
 
     public static void main(String[] args) {
