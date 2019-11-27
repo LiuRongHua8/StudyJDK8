@@ -1,4 +1,4 @@
-package com.iotknowyou.rt.java.lang;
+package com.iotknowyou.sources.rt.java.lang;
 
 /**
  * @title: MyObject
